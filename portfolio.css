@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import 'boxicons';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    animation: colors 6s reverse infinite;
+    background-image: linear-gradient(45deg, #000000, #000000, #000000);
+    background-size: 400% 400%;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navegação do menu CSS*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    font-family: 'Dongle', sans-serif;
+}
+
+nav .navbar {
+    width: 100%;
+    animation: colors 6s reverse infinite;
+    background-image: linear-gradient(45deg, #000000, #544d4d, #000000);
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Portfólio */
+nav .navbar .logo a {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+nav .navbar .menu {
+    display: flex;
+    margin-left: 200px;
+}
+
+nav .navbar .menu li {
+    margin: 0 20px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+nav .navbar .menu li a {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+}
+
+.navbar .menu li {
+    font-size: 30px;
+    font-size: 500;
+}
+
+.navbar .menu li:hover{
+    transform: scale(1.5);
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+/* Icons */
+.navbar .icons a {
+    font-size: 35px;
+    margin: 0 9px;
+    color: #ffffff;
+    position: relative;
+    top: 580px;
+    left: 250px;
+}
+
+.softskills {
+    position: relative;
+    top: 570px;
+    right: 555px;
+}
+
+/*  CSS Hello world */
+.titulo {
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 60px;
+    position: absolute;
+    overflow: hidden;
+    perspective: 500px;
+}
+
+.titulo:hover {
+    transform: scale(1.1);
+}
+
+.titulo span {
+    align-items: center;
+}
+
+/* Sobre min */
+a,
+a:focus,
+a:hover,
+a:active,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.Link {
+    filter: drop-shadow(0 1em 1em rgba(#000, .16));
+    position: absolute;
+    width: 590px;
+    height: 250px;
+    right: 100px;
+    left: 15%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    margin-top: 420px;
+    margin-left: 400px;
+    padding: 0em 2.4em;
+}
+
+.Link-title {
+    position: relative;
+    color: #000000;
+    top: 5%;
+    font-size: 30px;
+    background-image:
+    linear-gradient(0deg, #ddd, #000),
+    linear-gradient(0deg, #fff, #fff),
+;
+background-size: 0 2px, 0 100%;
+background-position: 8px calc(1em + 8px), 0 0;
+background-repeat: no-repeat;
+box-decoration-break: clone;
+display: inline;
+font-size: 30px;
+font-weight: 300;
+padding: 6px 8px;
+margin-left: 80px;
+pointer-events: none;
+line-height: 1.25;
+text-shadow: 1px 1px 0 rgb(0, 0, 0), 1px 0 rgb(0, 0, 0);
+transition: background ease-out 500ms;
+position: absolute;
+left: 10%;
+}
+
+.Link::before,
+.Link::after {
+    background-color: #fff;
+    border-radius: 3px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    transform-origin: right;
+    transition: transform 500ms;
+    width: 550px;
+    height: 250px;
+    top: 10px;
+    left: 100px;
+    z-index: -1;
+}
+
+.Link::after {
+    background-color: rgb(202, 196, 18);
+    transform: scaleX(0);
+    transition-duration: 450ms;
+}
+
+.Link:hover>.Link-title {
+    background-size: calc(100% - 16px) 2px, 100% 100%;
+    transition-duration: 200ms;
+}
+
+.Link:hover::before {
+    transform: scaleX(0);
+    transition-duration: 450ms;
+    transition-timing-function: ease-in-out;
+}
+
+.Link:hover::after {
+    transform: scaleX(1);
+    transition-duration: 700ms;
+    transition-timing-function: ease-in-out;
+    transform-origin: left;
+}
+
+.photo-animation{  
+   margin-top: 100px;
+   left: 370px;
+   position: absolute;
+   background: none;
+   background-repeat: no-repeat;
+}
+
+#section1{
+    height: 600px;
+}
