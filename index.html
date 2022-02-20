@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -12,78 +13,136 @@
     <link rel="shortcut icon" href="assets/otherIcons/favicon.png" type="image/x-icon">
     <script src="script.js"></script>
     <title>Portfolio</title>
-    <body>
-        <header class="header">  
-                <div class="logo">
-                    <h1>PORTFOLIO</h1>
-                </div>
-                <nav class="navbar">
-                    <ul class="menu">
-                        <li><a href="#about-me">ABOUT-ME</a></li>
-                        <li><a href="#">PROJECTS</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <div class="cursos"></div>
-                    </ul>
-                </nav>
-        </header>
 
-        <!-- Container é onde eu defino as requisições que eu vou ter naquela pagina em especifico. -->
-        <div class="container">
-                <!-- Menu -->
-                </div>
-                <!-- Titulo YOU WELCOME OU HELLO WORLD -->
-                <div class="titulo">
-                    <span>HELLO WORLD! 👋 </span>
-                </div>
-        
-                <!-- sobre min -->
-                <a class="Link" href="#" id="about">
-                    <span class="Link-title">
-                        <h3>ABOUT-ME</h3>My name is Joao Pedro, I'am 24 years old and I live in Santa Catarina, Brazil. Actually
-                        I'am studying logic the programation, HTML, CSS, Java and JavaScript.
-                        I search ever pratics, study, me Actualling to mercad technologic
-                    </span>
-                </a>
-                
-                <!-- frase programador -->
-                <div id="frase-programador">
-                    <a class="frase">
-                        <span>&nbsp&nbsp&nbsp&nbsp"The gap between theory <br>&nbsp&nbsp and practice is not <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp so great theory in practice!"</span>
-                    </a>
-                </div>
-                
-                <!-- minha foto -->
-                <a class="photo-animation">
-                    <img src="/img/animation-one.png" alt="">
-                </a>
-        
-                <!-- Icons de contatos -->
-                <div class="icons">
-                    <a href="https://github.com/JoaoChrisostomo"  target="_blank"><i class='bx bxl-github bx-burst' ></i></a>
-                    <a href="#"  target="_blank"><i class='bx bxl-instagram bx-burst' ></i></a>
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-220b67202/" target="_blank"><i class='bx bxl-linkedin-square bx-burst' ></i></a>
-                </div>
-        
-                <!-- Icons de softskills-->
-                <section class="texto-skills" id="skills">
-                    <br><br><br><br><br><br><br><br><br><br><br><br>
-                    <span>SKILLS</span>
-                    <div class="softskills">
-                        <a href="https://icons8.com/icon/tGvHBPJaKqEd/javascript"></a>
-                        <img src="https://img.icons8.com/color/48/000000/javascript--v2.png" />
-                        <a href="https://icons8.com/icon/GPfHz0SM85FX/logo-java-coffee-cup"></a>
-                        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v2.png" />
-                        <a href="https://icons8.com/icon/21278/css3"></a>
-                        <img src="https://img.icons8.com/color/48/000000/css3.png" />
-                        <a href="https://icons8.com/icon/20909/html-5"></a>
-                        <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
-                    </div>
-                </section>
-            </div>
+<body>
+    <!-- A tag Header é criada quando queremos criar um cabeçalho na página -->
+    <header class="header">
+        <div class="logo">
+            <h1>PORTFOLIO</h1>
         </div>
-    </body>
+        <!-- A tag nav é quando a nossa pagina existe algum tipo de navegação -->
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#about-me">about-me</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <div class="language-selected">
+                PT-BR
+            </div>
+            <ul>
+                <li><a href="#" class="br">Português</a></li>
+                <li><a href="#" class="en">English</a></li>
+                <li><a href="#" class="es">Español</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Container é onde eu defino as requisições que eu vou ter naquela pagina em especifico. -->
+    <div class="container">
+        <!-- Menu -->
+    </div>
+    <!-- Titulo YOU WELCOME OU HELLO WORLD -->
+    <div class="titulo">
+        <span>HELLO WORLD! 👋 </span>
+    </div>
+
+    <!-- sobre min -->
+    <a class="Link" href="#" id="about">
+        <span class="Link-title">
+            <h3>ABOUT-ME</h3> <br>My name is Joao Pedro, I'am 24 years old and I live in Santa Catarina, Brazil.
+            Actually
+            I'am studying logic the programation, HTML, CSS, Java and JavaScript.
+            I search ever pratics, study, me Actualling to mercad technologic
+        </span>
+    </a>
+
+    <!-- frase programador -->
+    <div id="frase-programador">
+        <a class="frase">
+            <span>"The gap between theory <br>and practice is not so <br>&nbsp great theory in practice!"</span>
+        </a>
+    </div>
+
+    <!-- minha foto -->
+    <a class="photo-animation">
+        <img src="/img/animation-one.png" alt="">
+    </a>
+
+    <!-- Icons de contatos -->
+    <div class="icons">
+        <a href="https://github.com/JoaoChrisostomo" target="_blank"><i class='bx bxl-github bx-burst'></i></a>
+        <a href="#" target="_blank"><i class='bx bxl-instagram bx-burst'></i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-220b67202/" target="_blank"><i
+                class='bx bxl-linkedin-square bx-burst'></i></a>
+    </div>
+
+    <!-- Icons de softskills-->
+    <section class="texto-skills" id="skills">
+        <span>SKILLS</span>
+        <br><br>
+        <div class="softskills">
+            <a href="https://icons8.com/icon/tGvHBPJaKqEd/javascript"></a>
+            <img src="https://img.icons8.com/color/48/000000/javascript--v2.png" />
+            <a href="https://icons8.com/icon/GPfHz0SM85FX/logo-java-coffee-cup"></a>
+            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v2.png" />
+            <a href="https://icons8.com/icon/21278/css3"></a>
+            <img src="https://img.icons8.com/color/48/000000/css3.png" />
+            <a href="https://icons8.com/icon/20909/html-5"></a>
+            <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
+        </div>
+    </section>
+
+    <footer>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Fale Comigo</h2>
+                <div class="p-2"></div>
+                Caso restar alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entrarei em contato.
+                <br><br><br>
+                <div class="p-4"></div>
+                <form id="form" action="">
+                    <div class="row-text-left">
+                        <div class="col-lg-6">
+                            <label for="name">SEU NOME (*)</label>
+                            <input type="text" required name="nome" label="Seu Nome" placeholder="Digite aqui"
+                                class="required field">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="email">E-MAIL (*)</label>
+                            <input type="email" required name="email" label="E-mail" placeholder="email@exemplo.com.br"
+                                class="required field">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="telefone">TELEFONE (*)</label>
+                            <input type="text" name="telefone" label="Telefone" placeholder="(__)_________"
+                                class="field">
+                        </div>
+                        <div class="col-lg-8">
+                            <label for="assunto">ASSUNTO (*)</label>
+                            <input type="text" required name="assunto" label="Assunto" placeholder="Digite aqui"
+                                class="required field">
+                        </div>
+                        <div class="col-12">
+                            <label class="msg" for="mensagem">MENSAGEM (*)</label>
+                            <textarea name="mensagem" id="mensagem" required label="mensagem" placeholder="Escreva aqui sua mensagem"
+                                class="required field" cols="30" rows="10"></textarea>
+                            <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+                            <button type="button" onClick="SubmitForm('#form');" class="button">Enviar contato <div
+                                    class="icon"><i class="fas fa-paper-plane"></i></div> </button>
+                            <div class="p-4"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <img src="logo-branco.png" alt="">
+        <p>Copyright Portfolio - 2022</p>
+    </footer>
+</body>
 </head>
 
 </html>
