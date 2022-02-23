@@ -24,7 +24,7 @@
         <nav class="navbar">
             <ul class="menu">
                 <li><a href="#about-me">about-me</a></li>
-                <li><a href="#">projects</a></li>
+                <li><a href="#projects">projects</a></li>
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#">services</a></li>
                 <li><a href="#">contact</a></li>
@@ -42,47 +42,50 @@
         </div>
     </header>
     <!-- Container é onde eu defino as requisições que eu vou ter naquela pagina em especifico. -->
-    <div class="container">
-        <!-- Menu -->
-    </div>
     <!-- Titulo YOU WELCOME OU HELLO WORLD -->
-    <div class="titulo">
-        <span>HELLO WORLD! 👋 </span>
-    </div>
+    <main>
+        <div class="titulo">
+            <span>HELLO WORLD! 👋 </span>
+        </div>
 
-    <!-- sobre min -->
-    <a class="Link" href="#" id="about">
-        <span class="Link-title">
-            <h3>ABOUT-ME</h3> <br>My name is Joao Pedro, I'am 24 years old and I live in Santa Catarina, Brazil.
-            Actually
-            I'am studying logic the programation, HTML, CSS, Java and JavaScript.
-            I search ever pratics, study, me Actualling to mercad technologic
-        </span>
-    </a>
+        <!-- sobre min -->
+        <div>
+            <a class="Link" href="#" id="about">
+                <span class="Link-title">
+                    <h3>ABOUT-ME</h3> <br>My name is Joao Pedro, I'am 24 years old and I live in Santa Catarina, Brazil.
+                    Actually
+                    I'am studying logic the programation, HTML, CSS, Java and JavaScript.
+                    I search ever pratics, study, me Actualling to mercad technologic
+                </span>
+            </a>
+        </div>
 
-    <!-- frase programador -->
-    <div id="frase-programador">
-        <a class="frase">
-            <span>"The gap between theory <br>and practice is not so <br>&nbsp great theory in practice!"</span>
+        <!-- frase programador -->
+        <div id="frase-programador">
+            <a class="frase">
+                <span>"The gap between theory <br>and practice is not so <br>&nbsp great theory in practice!"</span>
+            </a>
+        </div>
+
+        <!-- minha foto -->
+        <a class="photo-animation">
+            <img src="/img/animation-one.png" alt="">
         </a>
-    </div>
 
-    <!-- minha foto -->
-    <a class="photo-animation">
-        <img src="/img/animation-one.png" alt="">
-    </a>
+        <!-- Icons de contatos -->
+        <div class="icons">
+            <a href="https://github.com/JoaoChrisostomo" target="_blank"><i class='bx bxl-github bx-burst'></i></a>
+            <a href="#" target="_blank"><i class='bx bxl-instagram bx-burst'></i></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-220b67202/" target="_blank"><i
+                    class='bx bxl-linkedin-square bx-burst'></i></a>
+        </div>
+    </main>
 
-    <!-- Icons de contatos -->
-    <div class="icons">
-        <a href="https://github.com/JoaoChrisostomo" target="_blank"><i class='bx bxl-github bx-burst'></i></a>
-        <a href="#" target="_blank"><i class='bx bxl-instagram bx-burst'></i></a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-220b67202/" target="_blank"><i
-                class='bx bxl-linkedin-square bx-burst'></i></a>
-    </div>
+
 
     <!-- Icons de softskills-->
+    <span>SKILLS</span>
     <section class="texto-skills" id="skills">
-        <span>SKILLS</span>
         <br><br>
         <div class="softskills">
             <a href="https://icons8.com/icon/tGvHBPJaKqEd/javascript"></a>
@@ -96,16 +99,105 @@
         </div>
     </section>
 
+    <!-- Meus projetos -->
+    <h2>Projects</h2>
+    <section>
+        <div class="container1" id="projects">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <h3>Criptografador</h3>
+                        <img src="img/criptografador.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="face face2">
+                    <div class="content">
+                        <p>Este projeto foi o primeiro desafio desenvolvido em um bootcamp da Oracle em parceria com a
+                            Alura.
+                            Este projeto ainda totalmente terminado.
+                        </p>
+                        <a href="#">Click-me</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <h3>Jogo da Forca</h3>
+                        <img src="img/jogodaforcajpeg.jpeg" alt="">
+
+                    </div>
+                </div>
+
+                <div class="face face2">
+                    <div class="content">
+                        <p>Este projeto foi o segundo desafio desenvolvido em um bootcamp da Oracle em parceria com a
+                            Alura.
+                            Este projeto ainda totalmente terminado.
+                        </p>
+                        <a href="#">Jogar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="face face1">
+                    <div class="content">
+                        <h3>Calculadora</h3>
+                        <img src="#" alt="">
+
+                    </div>
+                </div>
+
+                <div class="face face2">
+                    <div class="content">
+                        <p>Em breve
+                        </p>
+                        <a href="#">Jogar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="face face1">
+                    <div class="content">
+                        <h3>Technewspaper</h3>
+                        <img src="#" alt="">
+
+                    </div>
+                </div>
+
+                <div class="face face2">
+                    <div class="content">
+                        <p>Em breve
+                        </p>
+                        <a href="#">Jogar</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Formulário -->
     <footer>
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Fale Comigo</h2>
-                <div class="p-2"></div>
-                Caso restar alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entrarei em contato.
-                <br><br><br>
-                <div class="p-4"></div>
-                <form id="form" action="">
-                    <div class="row-text-left">
+        <div id="contate-me">
+            <h2>Fale Comigo</h2>
+            <h3>Caso restar alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entrarei
+                em contato. <br><br><br></h3>
+        </div>
+        <section class="contact">
+                <form id="form"  class="row-text-left">
+                    <div class="container2" id="title"></div>
                         <div class="col-lg-6">
                             <label for="name">SEU NOME (*)</label>
                             <input type="text" required name="nome" label="Seu Nome" placeholder="Digite aqui"
@@ -120,24 +212,30 @@
                             <label for="telefone">TELEFONE (*)</label>
                             <input type="text" name="telefone" label="Telefone" placeholder="(__)_________"
                                 class="field">
-                        </div>
-                        <div class="col-lg-8">
-                            <label for="assunto">ASSUNTO (*)</label>
-                            <input type="text" required name="assunto" label="Assunto" placeholder="Digite aqui"
-                                class="required field">
+
+                            <div class="col-lg-8">
+                                <label for="assunto">ASSUNTO (*)</label>
+                                <input type="text" required name="assunto" label="Assunto" placeholder="Digite aqui"
+                                    class="required field">
+                            </div>
                         </div>
                         <div class="col-12">
                             <label class="msg" for="mensagem">MENSAGEM (*)</label>
-                            <textarea name="mensagem" id="mensagem" required label="mensagem" placeholder="Escreva aqui sua mensagem"
-                                class="required field" cols="30" rows="10"></textarea>
+                            <textarea name="mensagem" id="mensagem" required label="mensagem"
+                                placeholder="Escreva aqui sua mensagem" class="required field" cols="30"
+                                rows="10"></textarea>
+                        </div>
                             <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-                            <button type="button" onClick="SubmitForm('#form');" class="button">Enviar contato <div
-                                    class="icon"><i class="fas fa-paper-plane"></i></div> </button>
-                            <div class="p-4"></div>
+                            <button type="button" onClick="SubmitForm('#form');" class="button">Enviar contato 
+                                <div class="icon"><i class="fas fa-paper-plane"></i></div> </button>
                         </div>
                     </div>
                 </form>
-            </div>
+            <div class="p-4"></div>
+                            <br>
+                            <br>
+                            <br>
+                            <hr>
         </section>
         <img src="logo-branco.png" alt="">
         <p>Copyright Portfolio - 2022</p>
