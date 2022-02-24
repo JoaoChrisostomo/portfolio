@@ -27,7 +27,7 @@
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#">services</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <div class="language">
@@ -190,55 +190,79 @@
 
     <!-- Formulário -->
     <footer>
-        <div id="contate-me">
-            <h2>Fale Comigo</h2>
-            <h3>Caso restar alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entrarei
-                em contato. <br><br><br></h3>
+        <div id="contact">
+            <h2>Contact</h2>
+            <h3> if there is any doubt? Fill in the fields below with the following data that I will enter shortly
+                in touch. <br><br><br></h3>
         </div>
         <section class="contact">
-                <form id="form"  class="row-text-left">
-                    <div class="container2" id="title"></div>
-                        <div class="col-lg-6">
-                            <label for="name">SEU NOME (*)</label>
-                            <input type="text" required name="nome" label="Seu Nome" placeholder="Digite aqui"
-                                class="required field">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="email">E-MAIL (*)</label>
-                            <input type="email" required name="email" label="E-mail" placeholder="email@exemplo.com.br"
-                                class="required field">
-                        </div>
-                        <div class="col-lg-4">
-                            <label for="telefone">TELEFONE (*)</label>
-                            <input type="text" name="telefone" label="Telefone" placeholder="(__)_________"
-                                class="field">
+            <form id="form" class="row-text-left">
+                <div class="container2" id="title"></div>
+                <div class="col-lg-6">
+                    <label for="name">SEU NOME (*)</label>
+                    <input type="text" required name="nome" label="Seu Nome" placeholder="Digite aqui"
+                        class="required field">
+                </div>
+                <div class="col-lg-6">
+                    <label for="email">E-MAIL (*)</label>
+                    <input type="email" required name="email" label="E-mail" placeholder="email@exemplo.com.br"
+                        class="required field">
+                </div>
+                <div class="col-lg-4">
+                    <label for="telefone">TELEFONE (*)</label>
+                    <input type="text" name="telefone" label="Telefone" placeholder="(__)_________" class="field">
 
-                            <div class="col-lg-8">
-                                <label for="assunto">ASSUNTO (*)</label>
-                                <input type="text" required name="assunto" label="Assunto" placeholder="Digite aqui"
-                                    class="required field">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <label class="msg" for="mensagem">MENSAGEM (*)</label>
-                            <textarea name="mensagem" id="mensagem" required label="mensagem"
-                                placeholder="Escreva aqui sua mensagem" class="required field" cols="30"
-                                rows="10"></textarea>
-                        </div>
-                            <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-                            <button type="button" onClick="SubmitForm('#form');" class="button">Enviar contato 
-                                <div class="icon"><i class="fas fa-paper-plane"></i></div> </button>
-                        </div>
+                    <div class="col-lg-8">
+                        <label for="assunto">ASSUNTO (*)</label>
+                        <input type="text" required name="assunto" label="Assunto" placeholder="Digite aqui"
+                            class="required field">
                     </div>
-                </form>
-            <div class="p-4"></div>
-                            <br>
-                            <br>
-                            <br>
-                            <hr>
+                </div>
+                <div class="col-12">
+                    <label class="msg" for="mensagem">MENSAGEM (*)</label>
+                    <textarea name="mensagem" id="mensagem" required label="mensagem"
+                        placeholder="Escreva aqui sua mensagem" class="required field" cols="30" rows="10"></textarea>
+                </div>
+                <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+                <button type="button" onClick="SubmitForm('#form');" class="button">Enviar contato
+                    <div class="icon"><i class="fas fa-paper-plane"></i>
+                </button>
+                </div>
+                <br><br>
+            </form>
         </section>
-        <img src="logo-branco.png" alt="">
-        <p>Copyright Portfolio - 2022</p>
+    </footer>
+
+    <!-- Rodapé -->
+    <footer>
+        <section>
+            <div class="p-4">
+                <img src="logo-branco.png" alt="">
+            </div>
+            <div class="title">
+                <h2>Inicio</h2>
+                <ul>
+                    <li><a href="#">About-me</a></li>
+                    <li><a href="#">Download-CV</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h2>About-Project</h2>
+                <p>
+                    Este projeto faz parte de um desafio do programa de capacitação da trilha de 6 messes da Oracle next Education em parceria com a Alura o programa é para todos que queiram iniciar a carreira ou se desenvolver em alguma tecnologia.
+                </p>
+            </div>
+            <!-- <p>Copyright Portfolio - 2022</p> -->
+        </section>
     </footer>
 </body>
 </head>
