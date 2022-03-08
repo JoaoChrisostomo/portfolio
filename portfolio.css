@@ -12,10 +12,8 @@
 
  /* Básico */
  body {
-     animation: colors 6s reverse infinite;
-     background-image: linear-gradient(60deg, #000000, #464545, #000000);
-     background-size: 400% 400%;
      font-family: 'Courier New';
+     background: rgb(4, 4, 4);
      width: 100%;
      height: 100vh;
  }
@@ -28,10 +26,14 @@
  /* cabeçalho */
  .header {
      display: flex;
-     background-image: linear-gradient(60deg, #f8eded, #464545, #555353);
+     background-image: linear-gradient(60deg, #f8eded, #464545, #000000);
      align-items: center;
      height: 60px;
  }
+
+ /* section{
+    background-image: linear-gradient(60deg, #f8eded, #464545, #000000);
+ } */
 
  /* Navegação do menu CSS*/
  .navbar {
@@ -41,7 +43,7 @@
  }
 
  /* Alteracao de idioma */
- .language {
+ /* .language {
      color: rgb(179, 174, 174);
      position: relative;
      width: 140px;
@@ -105,7 +107,7 @@
  }
 
  /* jQuerry Class */
- .language-selected.change-br:before {
+ /* .language-selected.change-br:before {
      background-image: url(/img/brasil.png);
  }
 
@@ -115,7 +117,8 @@
 
  .language-selected.change-es:before {
      background-image: url(/img/espanha.png);
- }
+ } */
+ */
 
  /* Portfólio */
  .logo h1 {
@@ -143,12 +146,12 @@
  }
 
  .navbar .menu li a:hover {
-     color: rgb(58, 57, 57);
+     color: rgb(17, 17, 17);
      text-decoration: underline;
  }
 
  .navbar .menu li:hover {
-     transform: scale(1.1);
+     transform: scale(1.);
      text-decoration: underline;
  }
 
@@ -157,10 +160,11 @@
      font-size: 35px;
      color: #ffffff;
      display: flex;
-     justify-content: flex-end;
      margin-right: 10px;
-     margin-top: 20%;
+     justify-content: flex-end;
      gap: 10px;
+     padding-top: 20%;
+
  }
 
  /* Skills */
@@ -168,6 +172,15 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     gap: 20px;
+     border: white solid 1px;
+     border-radius: 1%;
+     padding: 15px;
+     height: 100px;
+ }
+
+ .softskills img {
+     height: 120%;
  }
 
  .texto-skills h2 {
@@ -295,7 +308,8 @@
  }
 
  .titulo:hover {
-     transform: scale(1.1);
+     transform: rotateY(360deg);
+     transition: 2s;
  }
 
  /* Caixa de texto "ABOUT-ME" */
@@ -340,7 +354,7 @@
 
  .Link::before,
  .Link::after {
-     background-color: rgb(74, 77, 77);
+     background-color: rgb(197, 202, 202);
      border-radius: 10px;
      content: ' ';
      display: flex;
@@ -408,295 +422,118 @@
      border-radius: 20px;
  }
 
- /* rodapé footer */
+ /* container do formulario */
+  .container {
+   background-color: rgb(10, 10, 10);
+   width: 100%;
+   height: auto;
+   display: flex;
+  }
 
- /* tag pai responsavél por todo rodapé */
- footer {
-     background-position-x: center;
-     background-position-y: top;
-     background-size: 100% auto;
-     background-repeat: no-repeat;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-origin: initial;
-     background-clip: initial;
-     background-image: linear-gradient(60deg, #f8eded, #2c2b2b, #1c1b1b);
-     background-size: 100% auto;
-     border-top: 4px solid #eeeeee;
-     border-top-style: solid;
-     border-top-color: rgb(255, 255, 255);
- }
+  form {
+   width: 100%;
+   background-color: rgb(208, 19, 53);
+   padding-bottom: 0%;
+   border-top-left-radius: 17px;
+   border-top-right-radius: 17px;
+   border-bottom-left-radius: 17px;
+   border-bottom-right-radius: 17px;
+}
 
- #form {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
- }
+.formulario h2 {
+   color: #050505;
+}
 
- h2 {
+input,
+textarea,
+button {
+   border-radius: 5px;
+}
+
+form label {
+   display: block;
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-left: 2%;
+   margin-bottom: 0.2em;
+   color: #000000;
+   cursor: pointer;
+
+}
+
+form input,
+form textarea {
+   display: block;
+   margin: 0 0 20px;
+   width: 75%;
+   padding: 10px 15px;
+   margin-left: 2%;
+   border: 1px solid rgb(33, 31, 31);
+   cursor: pointer;
+}
+
+#enviar{
+   background: rgb(16, 15, 15);
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+#enviar:hover{
+   background: rgb(53, 52, 52);
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   font-size: 18px;
+   transition: calc(0.5s);
+}
+
+  .oracle{
+      float: left; 
+      height: 100px;
+      display: flex;
+      margin-top: 35vw;
+  }
+
+.agrupation h2, h2 {
      font-family: 'Courier New', Courier, monospace;
-     font-size: 50px;
+     font-size: 40px;
      color: #fcfcfc;
      display: flex;
      justify-content: space-around;
      text-align: center;
-     height: 10%;
      margin-top: 1em;
-
  }
 
- h3 {
-     color: #f7f5e9;
-     display: flex;
-     justify-content: space-around;
-     height: 30%;
-     margin-top: 1%;
- }
+ /* Rodape */
 
- .field {
-     border: none;
-     padding: 10px;
-     padding-top: 10px;
-     padding-right: 10px;
-     padding-bottom: 10px;
-     padding-left: 10px;
-     outline: none;
-     outline-color: initial;
-     outline-style: none;
-     outline-width: initial;
-     width: 100%;
-     background-image: initial;
-     background-position-x: initial;
-     background-position-y: initial;
-     background-size: initial;
-     background-repeat: initial;
-     background-repeat: initial;
-     background-attachment: initial;
-     background-origin: initial;
-     background-clip: initial;
-     background-color: rgb(255, 255, 255);
-     color: #333;
-     border-radius: 30px;
-     border-top-left-radius: 30px;
-     border-top-right-radius: 30px;
-     border-bottom-right-radius: 30px;
-     border-bottom-left-radius: 30px;
-     margin-bottom: 10px;
- }
+.agrupation{
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    gap: 5em;
+}
+.agrupation{
+    text-align: center;
+    margin-top: 1em;
+}
 
- .field {
-     transition: 0.5s ease-out;
-     transition-property: all;
-     transition-duration: 0.5s;
-     transition-timing-function: ease-out;
-     transition-delay: 0s;
- }
+.title ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
 
- .field {
-     transition: 0.5s ease-out;
- }
+.title ul li a, p {
+    color: rgb(228, 223, 223);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
- p {
-     display: flex;
-     justify-content: center;
-     color: rgb(192, 182, 182);
- }
+.title ul li a:hover {
+    color: rgb(109, 105, 105);
+}
 
- .col-lg-6 {
-     position: relative;
-     width: 28%;
-     min-height: 1px;
-     padding-right: 15px;
-     padding-left: 15px;
-     margin: 0 auto;
- }
-
-
-
- input {
-     -webkit-writing-mode: horizontal-tb !important;
-     font-style: italic;
-     font-variant-ligatures: common-ligatures;
-     font-variant-caps: normal;
-     font-variant-numeric: lining-nums;
-     font-variant-east-asian: jis78;
-     font-weight: 100;
-     font-stretch: narrower;
-     text-rendering: auto;
-     letter-spacing: normal;
-     word-spacing: normal;
-     text-transform: none;
-     text-indent: 0px;
-     text-shadow: none;
-     display: inline-block;
-     text-align: start;
-     appearance: auto;
-     -webkit-rtl-ordering: logical;
-     cursor: text;
-     margin: 0%;
-     margin-top: 5px;
-     margin-right: 0px;
-     margin-left: 0px;
-     font-family: inherit;
-     font-size: inherit;
-     line-height: inherit;
-
- }
-
-
- label {
-     display: inline-block;
-     margin-bottom: 0.5rem;
-     cursor: default;
- }
-
- .row-text-left {
-     align-items: center;
-     width: 100%;
- }
-
- label {
-     cursor: default;
- }
-
- label {
-     color: #ffffff;
- }
-
- .text-left {
-     text-align: left !important;
-     margin-right: 50em;
-     display: block;
- }
-
- textarea {
-     overflow: auto;
-     overflow-x: auto;
-     overflow-y: auto;
-     resize: vertical;
-     margin: 0;
-     margin-top: 0px;
-     margin-right: 0px;
-     margin-left: 0px;
-     font-family: inherit;
-     font-size: inherit;
-     line-height: inherit;
-     text-rendering: auto;
-     letter-spacing: normal;
-     word-spacing: normal;
-     text-transform: none;
-     text-indent: 0px;
-     text-shadow: none;
-     display: inline-block;
-     text-align: start;
-     appearance: auto;
-     -webkit-rtl-ordering: logical;
-     cursor: text;
-     white-space: pre-wrap;
-     overflow-wrap: break-word;
- }
-
- .loader {
-     display: none;
- }
-
- .svg-inline--fa {
-     display: inline-block;
-     font-size: inherit;
-     height: 1em;
-     overflow: visible;
-     vertical-align: -0.125em;
- }
-
- .fa-spin {
-     -webkit-animation: fa-spin 2s infinite linear;
-     animation: fa-spin 2s infinite linear;
- }
-
- .svg-inline--fa.fa-w-16 {
-     width: 1em;
- }
-
- .button {
-     cursor: pointer;
- }
-
- button {
-     border: none;
-     border-top-color: initial;
-     border-top-style: none;
-     border-top-width: initial;
-     border-right-color: initial;
-     border-right-style: none;
-     border-right-width: initial;
-     border-bottom-color: initial;
-     border-bottom-style: none;
-     border-bottom-width: initial;
-     border-left-color: initial;
-     border-left-style: none;
-     border-left-width: initial;
-     border-image-source: initial;
-     border-image-slice: initial;
-     border-image-width: initial;
-     border-image-outset: initial;
-     border-image-repeat: initial;
-     border-radius: 30px;
-     border-top-left-radius: 30px;
-     border-top-right-radius: 30px;
-     border-bottom-right-radius: 30px;
-     border-bottom-left-radius: 30px;
-     padding: 10px 30px;
-     padding-top: 10px;
-     padding-right: 30px;
-     padding-bottom: 10px;
-     padding-left: 30px;
-     transition: 0.5s ease-out;
-     transition-property: all;
-     transition-duration: 0.5s;
-     transition-timing-function: ease-out;
-     transition-delay: 0s;
-     color: #fff;
-     background: #f7414e;
-     background-image: initial;
-     background-position-x: initial;
-     background-position-y: initial;
-     background-size: initial;
-     background-repeat: initial;
-     background-repeat: initial;
-     background-attachment: initial;
-     background-origin: initial;
-     background-clip: initial;
-     background-color: rgb(247, 65, 78);
-     display: block;
-     width: 100%;
-     max-width: 300px;
-     margin: auto;
-     margin-top: auto;
-     margin-right: auto;
-     margin-bottom: auto;
-     margin-left: auto;
- }
-
- button,
- select {
-     text-transform: none;
- }
-
- [type=reset],
- [type=submit],
- button,
- html [type=button] {
-     -webkit-appearance: button;
- }
-
- button,
- input {
-     overflow: visible;
-     overflow-x: visible;
-     overflow-y: visible;
- }
-
+/* meus projetos */
  .container1 {
      margin: 0 auto;
      display: flex;
@@ -712,20 +549,18 @@
 
  }
 
- .container1 h2 {
-     color: white;
-
- }
-
  .container1 .card .face {
      width: 300px;
      height: 200px;
      transition: 0.5s;
      border-radius: 5px;
  }
-section h2{
-     margin-top: 4em;
+
+ section h2 {
+     font-family: 'Courier New', Courier, monospace;
      color: rgb(255, 255, 255);
+     height: 10%;
+     margin-top: 1em;
  }
 
  .container1 .card .face.face1 {
@@ -792,127 +627,14 @@ section h2{
 
  .container1 .card .face.face2 .content a:hover {
      border-radius: 10px;
-     background: #535657;
-     color: #fff;
+     background: #d84749;
+     color: rgb(24, 23, 23);
  }
 
- /* Rodape */
- footer section {
-     width: 100%;
-     min-height: 250px;
-     display: flex;
- }
-
- footer .title {
-     width: 500px;
-     min-height: 150px;
-     padding: 20px;
- }
-
- footer .title:nth-child(3) {
-     width: 400px;
- }
-
- .title h2 {
-     font-size: 2em;
-     font-weight: 100;
-     color: #fff;
-     display: flex;
-     justify-content: flex-start;
-     margin-bottom: 20px;
- }
-
- .title ul li {
-     margin: 10px 0px;
-     list-style: none;
- }
-
- .title ul li a {
-     color: rgb(33, 30, 30);
-     text-decoration: none;
-     display: flex;
-     justify-content: flex-start;
- }
-
- .title ul li a:hover {
-     color: #fff;
- }
-
- .title p {
-     color: #fff;
-     text-align: justify;
- }
-
-
- .footer {
-     width: 100%;
-     height: 60px;
-     display: flex;
-     justify-content: space-between;
-     padding: 0px 20px;
-     align-items: center;
-     background-image: url(/img/oracle.png);
-     /* background-image: url(/img/alura.png); */
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: contain;
-     background-clip: content-box;
- }
-
- .footer .sociais {
-     margin-top: 3em;
-     display: flex;
-     flex-direction: end;
-     align-items: flex-start;
- }
-
- .sociais .social {
-     width: 24px;
-     height: 24px;
-     text-align: center;
-     border-radius: 5px;
-     background: rgb(169, 164, 164);
-     margin: 10px;
-     line-height: 20px;
-     cursor: pointer;
-     transition: background .3s linear;
- }
-
- .footer h2 {
-     color: #fff;
-     display: block;
- }
-
- .social {
-     display: flex;
-     align-items: center;
-
- }
-
- .sociais .social a {
-     margin-top: 5px;
-     font-size: 1.5em;
-     color: #000;
-     transition: color .3s linear;
- }
-
- .sociais .social a:hover {
-     background: rgb(94, 91, 91);
- }
-
- .sociais .social:hover a {
-     color: rgb(255, 255, 255);
- }
-
- @media(max-width: 950px) {
-     footer {
-         flex-direction: column;
-     }
-
-     footer .title {
-         width: 100%;
-         min-height: 150px;
-         padding: 15px;
-         text-align: center;
-     }
+ .content p{
+        font-size: 1.2em;
+        text-align: center;
+        margin: 0;
+        color: #000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
