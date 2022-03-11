@@ -90,14 +90,38 @@
      padding: 15px;
      height: 100px;
  } */
-
- .softskills{
+ /* .softskills{
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      padding: 10px;
      margin: 10px;
      border: rgb(243, 243, 243) solid 1px;
      border-radius: 1%;
+ } */
+
+ .container2{
+        background-color: red;
+        display: flex;
+        height: 400px;
+        width: 700px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px; 
+ }
+
+ #skills span{
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        padding: 500px;
+ }
+ .item {
+     background: blue;
+     border: 1px solid black;
+     width: 700px;
+     height: 380px;
+     margin: 10px;
  }
 
  .softskills img{
@@ -265,6 +289,7 @@
      left: 48%;
      top: 38em;
      transform: translate(-50%, -50%);
+     border: solid 1px #d4b91c;
  }
 
  .Link-title {
@@ -297,7 +322,7 @@
      transform-origin: right;
      transition: transform 500ms;
      width: 600px;
-     height: 250px;
+     height: 227px;
      z-index: -1;
  }
 
@@ -369,7 +394,7 @@
      max-height: 500px;
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-around;
      border: 1px solid #ce0202;
      margin: 0 auto;
  }
@@ -464,15 +489,24 @@
      justify-content: space-between;
      float: left;
      text-align: center;
-     margin-top: 1em;
+     height: 450px;
+     width: 1280px;
      border: solid 1px #c5f80c;
  }
 
  .oracle {
     float: left;
-    height: 100px;
+    height: 90px;
+   
+    padding: 5px 5px;
+    margin-top: 22em;
     display: flex;
-    
+}
+
+.oracle:hover{
+    background-color: #dfd9d9;
+    border: solid 1px #888a81;
+    transition: calc(0.5s);
 }
 
 .agrupation h2 {
@@ -623,3 +657,13 @@
      color: #000;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
+.align-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align-itens img{
+    width: 30px;
+    height: 30px;
+    margin-top: 1em;
+}
