@@ -299,48 +299,56 @@
  }
 
  /* Minhas Skills */
- .linguagens {
-     display: flex;
-     justify-content: flex-start;
-     flex-direction: row;
-     align-items: center;
-     align-content: flex-start;
-     flex-wrap: wrap;
-     width: 84%;
-     height: 90%;
-     background-image: linear-gradient(60deg, #f8eded, #464545, #000000);
-     padding: 2em;
-     border: 1px solid #dddddd;
 
- }
-
- #skills span {
-     font-size: 50px;
-     color: #ffffff;
-     font-weight: bold;
-     text-align: center;
-     padding: 500px;
- }
-
- .container2 {
-     background-color: rgb(53, 51, 51);
+ .texto-skills{
      display: flex;
      justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 50px;
+     margin-top: 3em;
+     width: 100%;
      height: 500px;
-     width: 690px;
-     padding: 20px;
-     margin: 80px;
+     display: flex;
+     /* border: 1px solid #070488; */
+}
+.texto-skills p{
+    width: 600px;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.texto-skills img{
+    display: flex;
+    color: white;
+    width: 35%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       
+}
+ .linguagens{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin-top: 1em;
+     padding: 10px;
+     align-content: center;
      flex-wrap: wrap;
-     border: rgb(243, 243, 243) solid 1px;
-     border-radius: 10px;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
-     -ms-flex-wrap: wrap;
  }
 
- .texto-skills img {
+ .abilitys{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    
+ }
+ .abilitys img {
      font-weight: bold;
      transition: 1s box-shadow;
      margin: 15px;
@@ -348,18 +356,14 @@
      border-radius: 10px;
  }
 
- .texto-skills img:hover {
-     color: #0f0f0f;
-     box-shadow: 0 0 10px #0f0f0f;
+ .abilitys img:hover {
+     color: #504c4c;
+     box-shadow: 0 0 10px #c5c3c3;
  }
 
- .texto-skills img:hover {
+ .abilitys img:hover {
      transform: scale(1.2);
      text-decoration: underline;
- }
-
- .texto-skills:hover {
-     background-color: #d12121;
  }
 
  .texto-skills h1 {
@@ -369,7 +373,6 @@
      display: flex;
      justify-content: center;
  }
-
  /* icons contatos */
  .icons {
      font-size: 3px;
@@ -380,7 +383,7 @@
      justify-self: flex-end;
      font-size: 25px;
      gap: 10px;
-     padding-top: 25%;
+     padding-top: 27%;
      display: -webkit-box;
      display: -ms-flexbox;
      -webkit-box-pack: end;
@@ -393,18 +396,17 @@
      display: flex;
      justify-content: center;
      flex-wrap: wrap;
-     gap: 3%;
-     padding-top: 2em;
+     gap: 4%;
+     padding-top: 20em;
      align-self: center;
-     border: 1px solid #2ec309;
+     /* border: 1px solid #2ec309; */
  }
 
  .container1 .card {
      display: grid;
      place-items: center;
      cursor: pointer;
-     border: 1px solid #09bdc3;
-
+     /* border: 1px solid #09bdc3; */
  }
 
  .container1 .card .face {
@@ -412,7 +414,7 @@
      height: 200px;
      transition: 0.5s;
      border-radius: 5px;
-     border: 1px solid #2b09c3;
+     /* border: 1px solid #2b09c3; */
  }
 
  section h2 {
@@ -517,12 +519,12 @@
      background-color: rgb(10, 10, 10);
      width: 100%;
      height: 0%;
-     max-width: 1890px;
+     max-width: 2124px;
      max-height: 500px;
      display: flex;
      align-items: center;
      justify-content: space-around;
-     border: 1px solid #ce0202;
+     /* border: 1px solid #ce0202; */
      margin: 10 auto;
  }
 
@@ -540,7 +542,7 @@
  }
 
  .formulario {
-     border: solid 1px #0f13e0;
+     /* border: solid 1px #0f13e0; */
      width: 50%;
      max-height: 500px;
  }
@@ -616,10 +618,21 @@
  .agrupation {
      display: flex;
      height: 450px;
-     width: 780px;
-     border: solid 1px #c5f80c;
+     max-width: 1280px;
+     /* margin-right: 500px; */
+     /* border: solid 1px #c5f80c; */
  }
 
+ .text-about p{
+        font-size: 1.4em;
+        color: rgb(240, 236, 236);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* border: 1px solid #c5f80c; */
+ }
  .oracle {
      display: flex;
      height: 80px;
@@ -667,6 +680,14 @@
      font-size: 20px;
      color: #ebeae5;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .contatct-rodape{
+        margin-top: 24em;
+        padding: 15px;
+        background: fixed;
+        background-color: rgb(10, 10, 10);
+        height: 50px;
  }
 
  /* mudando o scrollbar */
