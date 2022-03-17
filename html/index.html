@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="assets/otherIcons/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
@@ -18,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Scope+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
     <title>Portfolio</title>
 
 <body>
@@ -69,7 +68,7 @@
     <br>
     <div class="skills">
         <div class="imagem-skills">
-            <img src="img/Soft-Skills-480x200.jpg">
+            <img src="/img/Soft-Skills-480x200.jpg">
         </div>
             <!-- <h1>About Skills</h1> -->
         <div class="about-skills">
@@ -110,14 +109,15 @@
         </section>
     </div>
     <hr>
+
     <section>
         <h2>Projects</h2>
-        <div class="container1" id="projects">
+        <div class="container-cards" id="projects">
             <div class="card">
                 <div class="face face1">
                     <div class="content">
                         <h3>Criptografador</h3>
-                        <img src="img/criptografador.jpeg" alt="">
+                        <img src="/img/criptografador.jpeg" alt="">
                     </div>
                 </div>
 
@@ -141,7 +141,7 @@
                 <div class="face face1">
                     <div class="content">
                         <h3>Jogo da Forca</h3>
-                        <img src="img/jogodaforcajpeg.jpeg" alt="">
+                        <img src="/img/jogodaforcajpeg.jpeg" alt="">
                     </div>
                 </div>
 
@@ -165,7 +165,7 @@
                 <div class="face face1">
                     <div class="content">
                         <h3>BellaBread</h3>
-                        <img src="img/bellaBreadNew.jpg" alt="">
+                        <img src="/img/bellaBreadNew.jpg" alt="">
                     </div>
                 </div>
 
@@ -188,7 +188,7 @@
                 <div class="face face1">
                     <div class="content">
                         <h3>Mentalista</h3>
-                        <img src="img/mentalista.jpeg" alt="">
+                        <img src="/img/mentalista.jpeg" alt="">
                     </div>
                 </div>
 
@@ -211,7 +211,7 @@
                 <div class="face face1">
                     <div class="content">
                         <h3>Conversor de Moeda</h3>
-                        <img src="img/conversordemoeda.jpeg" alt="">
+                        <img src="/img/conversordemoeda.jpeg" alt="">
                     </div>
                 </div>
 
@@ -234,7 +234,7 @@
                 <div class="face face1">
                     <div class="content">
                         <h3>Conversor de Temperatura</h3>
-                        <img src="img/conversordetemperatura.jpeg" alt="">
+                        <img src="/img/conversordetemperatura.jpeg" alt="">
                     </div>
                 </div>
 
@@ -256,7 +256,7 @@
                 <div class="face face1">
                     <div class="content">
                         <h3>Em breve</h3>
-                        <img src="img/conversordetemperatura.jpeg" alt="">
+                        <img src="#" alt="">
                     </div>
                 </div>
 
@@ -339,5 +339,78 @@
             </div>
         </div>
     </section>
+    <hr>
+
+    <section>
+        <div class="container">
+            <div class="agrupation-form">
+                <form class="formulario">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    <div class="form-group">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="seuemail@dominio.com">
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone</label>
+                            <input type="telefone" id="telefone" required placeholder="(XX) xxxxx-xxxx">
+                        </div>
+                        <div>
+                            <label for="assunto">Assunto</label>
+                            <input type="assunto" id="assunto" required>
+                        </div>
+    
+                        <div class="caixa-texto">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="60" rows="10" required></textarea>
+                        </div>
+                        <div class="send-text">
+                            <input type="submit" value="Enviar" id="enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="agrupation">
+                <div class="title">
+                    <h2>Inicio</h2>
+                    <ul>
+                        <li><a href="#">About-me</a></li>
+                        <li><a href="#">Download-CV</a></li>
+                    </ul>
+
+                    <h2>Informações</h2>
+                    <ul>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- <div class="text-about"> -->
+                    <h2>About-Project</h2>
+                    <p>
+                        Este projeto faz parte de um dos desafios do programa "One Oracle Next education" que é uma
+                        trilha de capacitação de 6 messes, onde iremos aprender Métodologias ágeis, Lógica de
+                        programação, Desenvolvimento front-end e back-end. Esta sendo uma oportunidade incrivél aprender
+                        com a Oracle e a Alura, o programa é para todos que queiram iniciar a carreira ou se
+                        desenvolver em alguma tecnologia.
+                    </p>
+                </div>
+        
+                <!-- <div class="image">
+                    <img class="oracle" src="img/oracle.png" alt="img oracle.">
+                </div>
+                <div class="contatct-rodape">
+                    <a href="https://icons8.com/icon/AZOZNnY73haj/github"></a>
+                    <img src="https://img.icons8.com/fluency/48/000000/github.png" />
+                </div> -->
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
