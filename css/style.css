@@ -25,101 +25,106 @@ body {
     width: 100%;
     padding: 16px;
 }
-.navbar{
+
+.navbar {
     display: none;
 }
 
 /* Sobre min */
-.principal{
+.principal {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 16px; 
+    padding: 16px;
     gap: 32px;
     transition: 1s box-shadow;
     border-radius: 10px;
-    border: 1px solid #ffffff;
 }
-.principal:hover{
+
+.principal:hover {
     color: rgb(228, 228, 228);
     box-shadow: 0 0 10px #c2bbbb;
 }
-.perfil{
+
+.perfil {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 16px;
 }
-.perfil h1{
+
+.perfil h1 {
     color: #ffffff;
     font-size: clamp(24px, 2vw, 3em);
 }
-.perfil img{
+
+.perfil img {
     width: 120px;
     height: 120px;
 }
-.sobre{
+
+.sobre {
     color: #f9f9f9;
     text-align: center;
-    margin-bottom: 32px;   
+    margin-bottom: 32px;
 }
-.sobre h2{
+
+.sobre h2 {
     font-size: clamp(18px, 2vw, 3em);
     margin-bottom: 16px;
 }
-.sobre p{   
-    font-size: clamp(16px, 2vw, 3em);
+
+.sobre p {
+    font-size: clamp(16px, 2vw, 1.4em);
+    
 }
-.icons a{
+
+.icons a {
     color: #ffffff;
     font-size: 24px;
 }
 
 @media screen and (min-width:500px) {
-    .principal
-    .media
-    {
+    .principal .media {
         max-width: 50%;
         margin: 0 auto;
     }
-    .perfil
-    {
-      flex-direction: row;
+
+    .perfil {
+        flex-direction: row;
     }
-    .container{
+
+    .container {
         display: flex;
     }
 }
 
-.skills{
+.skills {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 16px; 
+    padding: 16px;
     gap: 25px;
     margin-bottom: 32px;
-    border: 1px solid #cc4141;
 }
 
-.imagem-skills img{
+.imagem-skills img {
     max-width: 100%;
     min-height: 100%;
     object-fit: contain;
-    border: 1px solid #e422ba;
 }
 
-.about-skills p{
+.about-skills p {
     font-size: clamp(16px, 2vw, 3em);
     color: #f9f9f9;
-    border: 1px solid #17993e;
 }
 
-.icons-skills img{
+.icons-skills img {
     max-width: calc(15px + 1vw + 2vw);
     min-height: calc(15px + 1vw + 2vw);
     transition: 1s box-shadow;
@@ -129,26 +134,27 @@ body {
     margin: 5px;
 }
 
-.icons-skills:hover img{
+.icons-skills:hover img {
     color: #504c4c;
     box-shadow: 0 0 5px #c5c3c3;
 }
-.icons-skills:hover img{
+
+.icons-skills:hover img {
     transform: scale(1.0);
     text-decoration: underline;
 }
 
-.linguagens{
+.linguagens {
     margin-bottom: 16px;
-    border: 1px solid #22c7e4;
+    /* border: 1px solid #494c4d; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 3px;
- }
+}
 
- .container-cards {
+.container-cards {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -156,14 +162,12 @@ body {
     gap: 4%;
     padding-top: 5em;
     align-self: center;
-    /* border: 1px solid #2ec309; */
 }
 
 .container-cards .card {
     display: grid;
     place-items: center;
     cursor: pointer;
-    /* border: 1px solid #09bdc3; */
 }
 
 
@@ -172,7 +176,6 @@ body {
     height: 200px;
     transition: 0.5s;
     border-radius: 5px;
-    /* border: 1px solid #2b09c3; */
 }
 
 .container-cards .card .face.face1 {
@@ -206,7 +209,7 @@ body {
 
 .container-cards .card .face.face1 .content h3 {
     margin: 10px 0 0;
-    color: rgb(255, 255, 255);
+    color: rgb(247, 244, 244);
     text-align: center;
     font-size: 1.5em;
 }
@@ -218,7 +221,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 20px 50px rgba(116, 113, 113, 0.8);
+    box-shadow: 0 00px 15px rgba(116, 113, 113, 0.8);
     transform: translateY(-100px);
 }
 
@@ -262,11 +265,11 @@ body {
     height: 30px;
     margin-top: 1em;
 }
-h2{
+
+h2 {
     color: white;
     font-size: clamp(24px, 2vw, 3em);
     text-align: center;
-    border: 1px solid #2ec309;
 }
 
 /* container do formulario */
@@ -280,7 +283,7 @@ h2{
     border: 1px solid #ce0202;
 }
 
-.agrupation-form{
+.agrupation-form {
     flex-shrink: 0;
     background-color: rgb(208, 19, 53);
     padding-bottom: 0%;
@@ -289,9 +292,9 @@ h2{
     border-bottom-left-radius: 17px;
     border-bottom-right-radius: 17px;
 }
+
 .formulario {
     order: 1;
-    border: solid 1px #0f13e0;
     width: 100%;
     max-height: 100%;
 }
@@ -367,61 +370,40 @@ form textarea {
 /* Rodape */
 
 .agrupation {
+    display: inline-flex;
     order: 1;
-    /* height: 50%; */
     width: 100%;
-    /* border: solid 1px #1c0cf8; */
-    background: rgb(224, 216, 216);
+    background: rgb(20, 17, 17);
+    border: 1px solid #2702ce;
+    margin-top: 9em;
+    gap: 10%;
+    padding: 10px;
+}
+.agrupation h2{
+    font-size: clamp(16px, 2vw, 1.8em);
 }
 
-.agrupation h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: #020101;
-}
-
-.title p {
-    
-    color: rgb(7, 6, 6);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* border: 1px solid #c5f80c; */
-}
-
-.title ul li {
+.agrupation ul li {
     margin-top: 1em;
     list-style: none;
+}
+
+.home-rodape .softskills-rodape, h2, ul li a {
+    font-size: clamp(16px, 2vw, 1.3em);
+    font-family: 'Courier New', Courier, monospace;
+    color: #f3f0f0;
+    text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.title li {
-    color: rgb(242, 235, 235);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.title ul li a{
-    color: rgb(49, 45, 45);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.title ul li a:hover {
+.agrupation ul li a:hover {
     text-decoration: underline;
-    color: rgb(0, 0, 0);
+    color: rgb(216, 37, 37);
     transform: scale(1.1);
     transition: calc(1.5s);
 }
 
-
-/* .oracle {
-    display: flex;
-    height: 30px;
-    padding: 5px 5px;
-    background-color: #f32626;
-} */
-
-.oracle:hover {
-    background-color: #dfd9d9;
-    border: solid 1px #888a81;
-    transition: calc(0.5s);
+.text-about {
+    color: rgb(240, 236, 236);
 }
