@@ -62,8 +62,8 @@ body {
 }
 
 .perfil img {
-    width: 120px;
-    height: 120px;
+    max-width: 200px;
+    min-height: 200px;
 }
 
 .sobre {
@@ -78,6 +78,7 @@ body {
 }
 
 .sobre p {
+    max-width: 110vh;
     font-size: clamp(16px, 2vw, 1.4em);
     
 }
@@ -113,20 +114,39 @@ body {
     margin-bottom: 32px;
 }
 
-.imagem-skills img {
+.imagem-hability img {
     max-width: 100%;
     min-height: 100%;
     object-fit: contain;
 }
 
 .about-skills p {
+    margin: 16px;
+    padding: 10px;
+    max-width: 130vh;
     font-size: clamp(16px, 2vw, 3em);
     color: #f9f9f9;
+}
+
+.about-skills p::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ce2b2b;
+    margin: 16px 0;
+}
+
+.about-skills p:hover{
+    color: #ee5555;
+    text-transform: uppercase;
+    transform: rotate(2deg);
 }
 
 .icons-skills img {
     max-width: calc(15px + 1vw + 2vw);
     min-height: calc(15px + 1vw + 2vw);
+    font-weight: bold;
     transition: 1s box-shadow;
     border: 1px solid #0f0f0f;
     border-radius: 10px;
@@ -136,17 +156,16 @@ body {
 
 .icons-skills:hover img {
     color: #504c4c;
-    box-shadow: 0 0 5px #c5c3c3;
+    box-shadow: 0 0 10px #c5c3c3;
 }
 
-.icons-skills:hover img {
+.icons-skills:hover img{
     transform: scale(1.0);
     text-decoration: underline;
 }
 
 .linguagens {
     margin-bottom: 16px;
-    /* border: 1px solid #494c4d; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -280,7 +299,6 @@ h2 {
     max-width: 2124px;
     /* max-height: 500px; */
     align-items: center;
-    border: 1px solid #ce0202;
 }
 
 .agrupation-form {
@@ -367,17 +385,22 @@ form textarea {
     transition: calc(0.5s);
 }
 
-/* Rodape */
 
+/* Rodape */
 .agrupation {
     display: inline-flex;
     order: 1;
-    width: 100%;
-    background: rgb(20, 17, 17);
+    flex-basis: 100%;
+    flex-flow: row wrap;
+    background: rgb(86, 87, 74);
     border: 1px solid #2702ce;
     margin-top: 9em;
     gap: 10%;
     padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    float: right;
 }
 .agrupation h2{
     font-size: clamp(16px, 2vw, 1.8em);
@@ -404,6 +427,6 @@ form textarea {
     transition: calc(1.5s);
 }
 
-.text-about {
+.text-about p {
     color: rgb(240, 236, 236);
 }
